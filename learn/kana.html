@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kana</title>
+
+  <!-- The favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/joey.ico">
+
+  <link rel="stylesheet" href="../css/gridtop2.css">
+  <script src="../js/kana.js" defer></script>
+</head>
+
+<body data-deck="../decks/kana/kana.txt">
+  <a id="top"></a>
+
+  <!-- Top nav -->
+  <div class="topnav-links-container">
+    <a href="kana.html" class="logo">
+      <span class="logo-text">あ</span>
+    </a>
+
+    <ul class="topnav-links">
+      <li class="topnav-link-item">
+        <span class="topnav-link-eng">Kana</span><br>
+        <a class="topnav-link" href="kana.html">かな</a>
+      </li>
+
+      <li class="topnav-link-item">
+        <span class="topnav-link-eng">Kanji</span><br>
+        <a class="topnav-link" href="kanji.html">漢字</a>
+      </li>
+    </ul>
+  </div>
+
+  <hr class="brush">
+
+  <main class="bodymargin">
+    <h1>kana</h1>
+    <hr class="dotted">
+
+    <section id="kanabox">
+      <div id="answer">&nbsp;</div>
+      <div id="kana_con"><span id="kana">あ</span></div>
+
+      <div id="input">
+        <input type="text" id="input_box" placeholder="Type romaji (e.g., a) and press Enter" autofocus />
+      </div>
+
+      <div id="message">Type the romanization and press Enter.</div>
+
+      <ul id="tools">
+        <li><button id="tool_next" type="button">Next</button></li>
+        <li><button id="tool_hint" type="button">Hint</button></li>
+      </ul>
+
+      <div id="count"></div>
+    </section>
+
+    <hr class="dotted">
+
+    <h3>Deck</h3>
+    <div id="deckTables"></div>
+  </main>
+
+  <a id="backtop" href="#top">▲</a>
+</body>
+</html>

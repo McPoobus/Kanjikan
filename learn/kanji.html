@@ -1,0 +1,82 @@
+<!-- WORK IN PROGRESS
+Will refactor to only go to kana.html and call different .txt decks to load characters
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kanji</title>
+
+    <!-- The favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/joey.ico">
+
+  <link rel="stylesheet" href="../css/gridtop2.css">
+  <script src="../js/kanji.js" defer></script>
+</head>
+
+<body data-deck="../data/kana.txt">
+  <a id="top"></a>
+
+  <!-- Top nav -->
+  <div class="topnav-links-container">
+    <a href="kana.html" class="logo">
+      <span class="logo-text">日</span>
+    </a>
+
+    <ul class="topnav-links">
+      <li class="topnav-link-item">
+        <span class="topnav-link-eng">Kana</span><br>
+        <a class="topnav-link" href="kana.html">かな</a>
+      </li>
+
+      <li class="topnav-link-item">
+        <span class="topnav-link-eng">Kanji</span><br>
+        <a class="topnav-link" href="kanji.html">漢字</a>
+      </li>
+    </ul>
+  </div>
+
+  <hr class="brush">
+
+  <main class="bodymargin">
+    <h1>kanji</h1>
+    <hr class="dotted">
+
+    <!-- Reuse same IDs so CSS works without changes -->
+    <section id="kanabox">
+      <div id="answer">&nbsp;</div>
+      <div id="kana_con"><span id="kana">日</span></div>
+
+      <div id="input">
+        <input type="text" id="input_box" placeholder="Type reading (e.g., nichi) and press Enter" autofocus />
+      </div>
+
+      <div id="message">Type the reading and press Enter.</div>
+
+      <ul id="tools">
+        <li><button id="tool_next" type="button">Next</button></li>
+        <li><button id="tool_hint" type="button">Hint</button></li>
+      </ul>
+
+      <div id="count"></div>
+    </section>
+
+    <hr class="dotted">
+
+    <h3>Starter kanji</h3>
+    <table class="kana-table">
+      <tr>
+        <td><span class="kana">日</span><br><span class="romaji">nichi</span></td>
+        <td><span class="kana">月</span><br><span class="romaji">getsu</span></td>
+        <td><span class="kana">山</span><br><span class="romaji">yama</span></td>
+        <td><span class="kana">川</span><br><span class="romaji">kawa</span></td>
+        <td><span class="kana">人</span><br><span class="romaji">hito</span></td>
+      </tr>
+    </table>
+  </main>
+
+  <a id="backtop" href="#top">▲</a>
+</body>
+</html>
