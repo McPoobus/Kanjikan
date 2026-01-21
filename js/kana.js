@@ -1,21 +1,17 @@
-// js/kana.js
-// Loads deck from a txt file and runs the kana trainer.
-// Also renders the full deck at the bottom, grouped by section headers in kana.txt.
+// js/kanji.js
+// Loads deck from kanji.txt and runs the kanji trainer.
+// Also renders the full deck at the bottom, grouped by section headers in kanji.txt.
 //
 // Deck supports lines like:
-//   "を","o|wo"
-//   "あ","a"
+//   "日","nichi|jitsu|hi"
+//   "山","yama"
 // and (backward compatible):
-//   kana: "あ", romaji: "a"
-//
-// Section headers come from comment lines starting with # in the txt file.
-// Example:
-//   # HIRAGANA — GOJUON
+//   kana: "日", romaji: "nichi|hi"
 //
 // Features:
-// - Multiple romaji answers via | (e.g., o|wo)
-// - Typing kana itself is accepted (e.g., あ)
-// - IME-safe submit + input clearing (fixes textbox not fully clearing)
+// - Multiple answers via | (e.g., nichi|jitsu|hi)
+// - Typing the kanji itself is accepted (e.g., 日)
+// - IME-safe submit + input clearing
 // - Renders tables into <div id="deckTables"></div>
 
 let deck = [];
